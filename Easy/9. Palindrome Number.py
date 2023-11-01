@@ -4,3 +4,18 @@ def isPalindrome(x):
         if str_x[i] != str_x[-i - 1]:
             return False
     return True
+
+
+def isPalindrome_no_convert(x):
+    if x < 0:
+        return False
+
+    reversed_num = 0
+    num = x
+    while x:
+        print(x)
+        reversed_num = reversed_num * 10 + x % 10
+        x //= 10
+        print(reversed_num)
+
+    return reversed_num == num
