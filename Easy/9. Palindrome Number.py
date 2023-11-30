@@ -1,9 +1,11 @@
 def isPalindrome(x):
-    str_x = str(x)
-    for i in range(len(str_x) // 2):
-        if str_x[i] != str_x[-i - 1]:
-            return False
-    return True
+    if isinstance(x, int):
+        str_x = str(x)
+        for i in range(len(str_x) // 2):
+            if str_x[i] != str_x[-i - 1]:
+                return False
+        return True
+    return False
 
 
 def isPalindrome_no_convert(x):
