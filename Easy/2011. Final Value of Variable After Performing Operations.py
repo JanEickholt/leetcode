@@ -1,4 +1,4 @@
-def finalValueAfterOperations(self, operations):
+def finalValueAfterOperations(operations):
     x = 0
     for i in operations:
         if "++" in i:
